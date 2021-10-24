@@ -7,6 +7,6 @@ SatelliteDB is a database object schema extraction and versioning tool.
 
 ### Changelog
 
-##### 2021-08-11
+##### 2021-08-24
 ##### Added:
 - Supports SQLite databases
