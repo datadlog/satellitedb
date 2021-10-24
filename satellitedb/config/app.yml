@@ -1,0 +1,14 @@
+main:
+  github: False
+
+db_config:
+  db_type: sqlite #["sqlite","postgresql"]
+  db_objects: ["tables", "views", "indexes","triggers"] #["tables","views","indexes","functions","procedures","triggers"]
+
+github_config:
+  remote_url:
+  access_token:
+
+output:
+  schema_dump_loc: c:\datadlog\satellitedb\tests\db\
+  file_format: sql #["sql","txt"]
