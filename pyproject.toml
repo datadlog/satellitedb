@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "satellitedb"
+version = "0.1.0"
+description = "SatelliteDB is a database object schema extraction and versioning tool."
+authors = ["Naveen Thurimerla <nawinto99@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^5.4.1"
+mkdocs = {version = "^1.2.1", optional = true}
+mkdocs-material = {version = "^7.1.10", optional = true}
+mkdocstrings = {version = "^0.15.2", optional = true}
+mkdocs-include-markdown-plugin = {version = "^3.2.0", optional = true}
+mkdocs-autorefs = {version = "^0.2.1", optional = true}
+
+[tool.poetry.extras]
+doc = ["mkdocs", "mkdocs-include-markdown-plugin", "mkdocs-material", "mkdocstrings", "mkdocs-autorefs"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

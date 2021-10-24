@@ -1,0 +1,84 @@
+
+# Project information
+site_name: SatelliteDB
+site_url: https://datadlog.github.io/satellitedb/
+site_author: Naveen Thurimerla
+site_description: >-
+  SatelliteDB is a database object schema extraction and versioning tool.
+
+# Repository
+repo_name: datadlog/satellitedb
+repo_url: https://github.com/datadlog/satellitedb
+
+# Copyright
+copyright: Copyright &copy; 2021 Data Dlog
+
+# Configuration
+theme:
+    name: "material"
+    logo: assets/favicon.png
+
+    # Static files
+    static_templates:
+        - 404.html
+
+    # Don't include MkDocs' JavaScript
+    include_search_page: false
+    search_index_only: true
+
+    language: en
+    features:
+        - content.tabs.link
+        # - navigation.instant
+        - navigation.sections
+        - navigation.tabs
+        - navigation.tracking
+        - search.highlight
+        - search.share
+        - search.suggest
+    palette:
+        - scheme: default
+          primary: blue
+          accent: blue
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+        - scheme: slate
+          primary: red
+          accent: red
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
+    font:
+        text: Roboto
+        code: Roboto Mono
+    favicon: assets/favicon.png
+    icon:
+        logo: logo
+
+# Plugins
+plugins:
+    - include-markdown
+    - search
+
+# Customization
+extra:
+    generator: false
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/datadlog
+        - icon: fontawesome/brands/docker
+          link: https://hub.docker.com/r/datadlog/satellitedb/
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/datadlog
+
+nav:
+    - Home: index.md
+    - Getting started:
+          - Installation: getting-started.md
+          - Usage: usage.md
+          - Authors: authors.md
+          - Contributing: contributing.md
+          - License: license.md
+          - Releases:
+                - Changelog: changelog.md

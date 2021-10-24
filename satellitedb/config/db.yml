@@ -1,0 +1,10 @@
+postgresql:
+  host_name: hostname
+  database_name: databasename
+  port: 5432
+  schema_name: schemaname
+  user_name: username
+  password: password
+
+sqlite:
+  db_url: c:\nawinto99\satellitedb\tests\db\dummy.db
